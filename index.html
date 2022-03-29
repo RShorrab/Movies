@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32-543a21832c8931d3494a68881f6afcafc58e96c5d324345377f3197a37b367b5.png">
+        <title>JS Exam</title>
+    </head>
+    <body>
+        <div id="sideBar">
+            <div id="togglePart"> 
+                <img src="imgs/logo.png" alt="Site Logo">
+                <div id="toggleIcon">
+                    <i class="fas fa-align-justify fa-2x"></i>
+                </div>
+                <div>
+                    <i class="fas fa-globe d-block mb-3 "></i>
+                    <i class="fas fa-share-alt mb-3"></i>
+                </div>
+            </div>
+
+            <ul class="overflow-hidden list-unstyled"> 
+                <li><a id="now_playing" href="#">Now playing</a></li>
+                <li><a id="popular" href="#">Popular</a></li>
+                <li><a id="top_rated" href="#">Top Rated</a></li>
+                <li><a id="trending" href="#">Trending</a></li>
+                <li><a id="upcoming" href="#">Upcoming</a></li>
+                <li><a href="#contactUs" >Contact Us</a></li>
+            </ul>
+            <div>
+                <i class="fab fa-facebook-f socialIco"></i>
+                <i class="fab fa-twitter socialIco"></i>
+                <i class="fas fa-globe socialIco"></i>
+                <p class="text-secondary">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="text-center p-5 mt-5"> <!--Search-->
+            <input type="text" placeholder="get movie by word..." class="inputs me-3 shadow-none" id="generalSearchBar"/>
+            <input type="text" placeholder="search here.." class="inputs" id="localSearchBar"/>            
+        </div>
+        <section class="movies container">
+            <div id="movies" class="row text-center p-5">
+               
+            </div>
+        </section>
+        <section id="contactUs" class="m-auto text-start p-5" style="width: 85%;">
+            <h4 class="mb-5 ms-4 text-white fs-3 fw-light">Contact Us...</h4>
+            <form"> 
+                <input type="text" placeholder="Your Name" class="inputs mx-4 mb-3">
+                <input type="email" placeholder="Your Email" class="inputs">
+                <input type="text" placeholder="Your Phone" class="inputs mx-4 mb-3">
+                <input type="text" placeholder="Your Age" class="inputs">
+                <input type="password" placeholder="Password" class="inputs mx-4 mb-3">
+                <input type="password" placeholder="Confirm password" class="inputs mb-5"> <br>
+                <button class="btn btn-outline-danger ms-4" disabled >Submit</button>
+            </form>
+        </section>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
